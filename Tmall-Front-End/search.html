@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	</head>
+	<style>
+		div.searchDiv {
+			background-color: #C40000;
+			width: 400px;
+			margin: 50px auto;
+			padding: 1px;
+			height: 42px;
+			display: block;
+		}
+		div.searchDiv input {
+			width: 275px;
+			margin: 1px;
+			height: 36px;
+			border: 1px solid transparent;
+			/*获取焦点不变色*/
+			outline: none;
+		}
+		div.searchDiv button {
+			width: 110px;
+			background-color: #C40000;
+			color: white;
+			/*边框设置成透明色，否则会有边框阴影*/
+			border: 1px solid transparent;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		div.searchBelow {
+			margin-left: -20px;
+			padding-top: 3px;
+		}
+		div.searchBelow span {
+			color: #999999;
+		}
+		div.searchBelow a {
+			/*超链的间隔，不能使用margin吗*/
+			/*margin: 0px 20px;*/
+			padding: 0px 20px;
+			font-size: 14px;
+		}
+		img.logo {
+			position: absolute;
+			left: 0;
+			top: 50px;
+			z-index: -1;
+		}
+		body {
+			font-family: arial;
+			font-size: 12px;
+		}
+		a {
+			text-decoration: none;
+			color: #999999;
+		}
+		a:hover {
+			color: #C40000;
+		}
+	</style>
 	<body>
+		<div>
+			<a href="#">
+				<img class="logo" id="logo" src="http://how2j.cn/tmall/img/site/logo.gif" />
+			</a>
+			
+			<div class="searchDiv">
+				<input type="text" placeholder="占位 占位" />
+				<button class="searchButton" type="submit">搜索</button>
+				<div class="searchBelow">
+					<span><a href="#">平衡车</a></span><span>|</span>
+					<span><a href="#">平衡车</a></span><span>|</span>
+					<span><a href="#">平衡车</a></span><span>|</span>
+					<span><a href="#">平衡车</a></span><span>|</span>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
