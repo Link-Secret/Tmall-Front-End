@@ -6,45 +6,43 @@
 		<script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
 		<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
 		<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
-	</head>
+	</head> 
 	<style>
 		div.simpleSearchDiv {
 			background-color: #C40000;
-			width:300px;
+			margin: 10px 20px 40px;
+			width: 300px;
 			height: 40px;
 			padding: 1px;
-			margin: 10px 20px 40px;
 			display: block;
 		}
 		div.simpleSearchDiv input {
-			border: 1px solid transparent;
 			margin: 2px;
 			height: 34px;
 			width: 225px;
 			outline: none;
+			border: 1px solid transparent;
 		}
 		div.simpleSearchDiv button {
-			width: 60px;
 			border: 1px solid transparent;
 			background-color: #C40000;
-			font-size: 14px;
 			color: white;
+			width: 60px;
 		}
 		div.searchBelow {
-			margin-left: -20px;
 			margin-top: 3px;
+			margin-left: -20px;
 		}
 		div.searchBelow span {
 			color: #999999;
 		}
 		div.searchBelow a {
-			padding: 0px 20px;
 			color: #999999;
-			font-size: 14px;
+			padding: 0px 20px;
 		}
 		div.searchBelow a:hover {
-			color: #C40000;
 			text-decoration: none;
+			color: #C40000;
 		}
 		img.simpleLogo {
 			position: absolute;
@@ -52,25 +50,20 @@
 			top: 50px;
 			width: 140px;
 		}
-		body {
-			font: 12px;
-			font-family: arial;
-		}
 	</style>
 	<body>
 		<div>
 			<a href="#">
-				<img class="simpleLogo" id="simpleLogo" 
-						src="http://how2j.cn/tmall/img/site/simpleLogo.png">
+				<img src="http://how2j.cn/tmall/img/site/simpleLogo.png" id="simpleLogo" class="simpleLogo" />
 			</a>
 			<div class="simpleSearchDiv pull-right">
-				<input type="text" placeholder="占位 占位" name="keyword" />
-				<button type="submit" class="searchButton">搜索</button>
+				<input type="text" name="keyword" placeholder="占位 占位" />
+				<button class="searchButton" type="submit">搜索</button>
 				<div class="searchBelow">
 					<span><a href="#">冰箱</a></span><span>|</span>
 					<span><a href="#">冰箱</a></span><span>|</span>
 					<span><a href="#">冰箱</a></span><span>|</span>
-					<span><a href="#">冰箱</a></span><span>|</span>
+					<span><a href="#">冰箱</a></span>
 				</div>
 			</div>
 		</div>
